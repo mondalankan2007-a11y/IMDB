@@ -107,7 +107,7 @@ export default function BodySection() {
           </div>
         ))}
 
-        <div className="browse">Browse trailers ➤</div>
+        <div className='browse'>Browse trailers ➤</div>
       </div>
 
     </div>
