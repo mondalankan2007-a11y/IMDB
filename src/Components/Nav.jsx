@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import "./NavBar.css";
+import "./NavMenuStyle.css";
 import NavMenu from "./NavMenu"; 
+import "./Nav.css"
 
 export default function Navbar() {
     const [searchText, setSearchText] = useState("");
