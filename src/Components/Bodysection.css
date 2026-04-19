@@ -123,7 +123,7 @@ html, body, #root {
   color: #ddd;
 }
 
-/* ── ARROWS ──────────────────────────────────────── */
+
 .arrow {
   position: absolute;
   top: 50%;
@@ -142,7 +142,7 @@ html, body, #root {
 .arrow.left  { left: 10px; }
 .arrow.right { right: 10px; }
 
-/* ── RIGHT PANEL ─────────────────────────────────── */
+
 .upNext {
   flex: 1;
   display: flex;
@@ -157,7 +157,6 @@ html, body, #root {
   font-weight: 700;
 }
 
-/* ── CARD ────────────────────────────────────────── */
 .card {
   display: flex;
   gap: 10px;
@@ -241,7 +240,7 @@ html, body, #root {
   margin-top: 4px;
 }
 
-/* ── BROWSE LINK ─────────────────────────────────── */
+
 .browse {
   margin-top: 6px;
   color: #ddd;
