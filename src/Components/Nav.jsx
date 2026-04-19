@@ -40,8 +40,7 @@ export default function Navbar() {
                 <div className="logo">IMDB</div>
                 <button className="menu" onClick={toggleMenu}>☰ Menu</button>
 
-                <div className="logo">IMDb</div>
-                <button className="menu">☰ Menu</button>
+                
 
             </div>
             
