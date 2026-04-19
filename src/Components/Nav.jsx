@@ -48,7 +48,7 @@ export default function Navbar() {
                     ))}
                 </div>
             </div>
-                <div className="rightnav">
+                <div className='rightnav'>
                     <button className="imdbpro" >IMDbPro</button>
                     <button >❖ Watchlist</button>
                     <button>Sign In</button>
