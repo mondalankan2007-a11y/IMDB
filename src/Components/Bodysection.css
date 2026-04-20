@@ -1,0 +1,251 @@
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #1a1a1a 0%, #0a0a0a 50%, #000 100%);
+}
+
+
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: transparent;        
+  color: white;
+  max-width: 1200px;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+
+.hero {
+  position: relative;
+  flex: 3;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #111;
+}
+
+.heroBg {
+  display: none;
+}
+
+.heroImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  z-index: 1;
+  mask-image: none;
+  -webkit-mask-image: none;
+  filter: brightness(0.55);       
+}
+
+.gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 65%;
+  background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 55%, transparent 100%);
+  z-index: 2;
+}
+
+
+.heroInfo {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 3;
+}
+
+.poster {
+  width: 70px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.playButton {
+  width: 54px;
+  height: 54px;
+  border: 3px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.textInfo {
+  flex: 1;
+}
+
+.titleRow {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.titleRow h2 {
+  font-size: 22px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.duration {
+  font-size: 14px;
+  color: #ccc;
+  white-space: nowrap;
+}
+
+.textInfo p {
+  color: #ccc;
+  margin: 2px 0 6px;
+  font-size: 14px;
+}
+
+.reactions {
+  display: flex;
+  gap: 12px;
+  font-size: 13px;
+  color: #ddd;
+}
+
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.15);
+  border: none;
+  color: white;
+  font-size: 22px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 4;
+  transition: background 0.2s;
+}
+.arrow:hover { background: rgba(255,255,255,0.3); }
+.arrow.left  { left: 10px; }
+.arrow.right { right: 10px; }
+
+
+.upNext {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.upNext h3 {
+  color: #f5c518;
+  margin: 0 0 14px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 4px;
+  transition: background 0.15s;
+}
+.card:hover { background: rgba(255,255,255,0.06); }
+.activeCard  { background: rgba(255,255,255,0.08); }
+
+.thumbWrap {
+  position: relative;
+  flex-shrink: 0;
+  width: 100px;
+  height: 70px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.thumbWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.35);
+  gap: 4px;
+}
+
+.smallPlay {
+  width: 28px;
+  height: 28px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: white;
+}
+
+.thumbDuration {
+  font-size: 11px;
+  color: white;
+  font-weight: 600;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
+.cardText p {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.cardSub {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.cardReactions {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  color: #bbb;
+  margin-top: 4px;
+}
+
+
+.browse {
+  margin-top: 6px;
+  color: #ddd;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+.browse:hover { color: white; }

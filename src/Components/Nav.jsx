@@ -1,7 +1,11 @@
 import React, { useState } from "react";
+
 import "./NavMenuStyle.css";
 import NavMenu from "./NavMenu"; 
 import "./Nav.css"
+
+
+import "./Nav.css";
 
 export default function Navbar() {
     const [searchText, setSearchText] = useState("");
@@ -32,8 +36,12 @@ export default function Navbar() {
     return (
         <nav className="navbar">
             <div className="leftnav">
+
                 <div className="logo">IMDB</div>
                 <button className="menu" onClick={toggleMenu}>☰ Menu</button>
+
+                
+
             </div>
             
             <div className="searchName">
