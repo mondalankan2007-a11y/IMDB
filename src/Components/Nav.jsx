@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 
+
 import "./NavMenuStyle.css";
+
+import './NavMenuStyle.css';
+
 import NavMenu from "./NavMenu"; 
 import "./Nav.css"
 
