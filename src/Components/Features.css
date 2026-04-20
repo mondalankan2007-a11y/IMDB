@@ -1,0 +1,50 @@
+.features{
+  width:100%;
+  background:black;
+  color:white;
+  padding:40px 0;
+}
+
+.features-container{
+  width:95%;
+  margin:0 auto;
+}
+
+.features-heading{
+  color:#f5c518;
+  font-size:36px;
+  margin-bottom:25px;
+}
+
+.poster-row{
+  display:flex;
+  gap:20px;
+  overflow-x:auto;
+  overflow-y:hidden;
+  white-space:nowrap;
+  padding-bottom:10px;
+}
+
+.poster{
+  flex:0 0 auto;
+  width:180px;
+  height:270px;
+  object-fit:cover;
+  border-radius:10px;
+  transition:transform 0.3s;
+}
+
+.poster:hover{
+  transform:scale(1.05);
+}
+
+.feature-title{
+  margin-top:20px;
+  font-size:20px;
+}
+
+.feature-link{
+  color:#3ea6ff;
+  margin-top:5px;
+  cursor:pointer;
+}
