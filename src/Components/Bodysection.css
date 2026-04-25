@@ -249,3 +249,39 @@ html, body, #root {
   font-weight: 600;
 }
 .browse:hover { color: white; }
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  .hero {
+    height: 400px;
+  }
+  .upNext {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    height: 300px;
+  }
+  .titleRow h2 {
+    font-size: 18px;
+  }
+  .poster {
+    width: 50px;
+  }
+  .playButton {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .textInfo p {
+    font-size: 12px;
+  }
+  .reactions {
+    font-size: 11px;
+    gap: 8px;
+  }
+}
