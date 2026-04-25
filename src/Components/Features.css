@@ -48,3 +48,13 @@
   margin-top:5px;
   cursor:pointer;
 }
+
+@media (max-width: 600px) {
+  .features-heading {
+    font-size: 28px;
+  }
+  .poster {
+    width: 140px;
+    height: 210px;
+  }
+}
